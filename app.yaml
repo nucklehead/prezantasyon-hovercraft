@@ -1,0 +1,8 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+  - url: /kisa-ki-python
+    static_files: kisa-ki-python/build/index.html
+    upload: kisa-ki-python/build/*
