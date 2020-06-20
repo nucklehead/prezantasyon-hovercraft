@@ -12,10 +12,10 @@ jobs:
       volumes:
         - ./:/presentation
     steps:
-    - name: Kreye tout prezantasyon yo
-    - run: | 
-        for FILE in *; do
-          if [ -d "$FILE" ]; then
-            hovercraft $FILE build
-          fi 
-        done
+      - name: Kreye tout prezantasyon yo
+        run: | 
+         for FILE in *; do
+           if [ -d "$FILE" ]; then
+             hovercraft $FILE build
+           fi 
+         done
