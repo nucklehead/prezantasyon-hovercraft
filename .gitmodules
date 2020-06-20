@@ -1,0 +1,3 @@
+[submodule "docker-hovercraft"]
+	path = docker-hovercraft
+	url = https://github.com/nucklehead/docker-hovercraft.git
