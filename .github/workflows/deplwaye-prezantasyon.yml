@@ -10,7 +10,7 @@ jobs:
     container:
       image: nucklehead/docker-hovercraft
       volumes:
-        - ./:/presentation
+        - $GITHUB_WORKSPACE:/presentation
     steps:
       - name: Kreye tout prezantasyon yo
         run: | 
