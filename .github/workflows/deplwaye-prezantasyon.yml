@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: nucklehead/docker-hovercraft:2.7
+      image: nucklehead/docker-hovercraft
       volumes:
         - ./:/presentation
     steps:
