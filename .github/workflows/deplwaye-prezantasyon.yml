@@ -1,0 +1,21 @@
+name: Deplwaye prezantasyon yo ak docker-hovercraft
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: nucklehead/docker-hovercraft
+      volumes:
+        - ${{ github.workspace }}:/presentation
+    steps:
+      - name: Kreye tout prezantasyon yo
+        run: | 
+         for FILE in *; do
+           if [ -d "$FILE" ]; then
+             hovercraft $FILE build
+           fi 
+         done
